@@ -53,6 +53,9 @@
         },
         "laravel": {
             "dont-discover": []
+        },
+        "composer-normalize": {
+            "indent-size": 4
         }
     },
     "config": {
@@ -60,7 +63,12 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
-            "pestphp/pest-plugin": true
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        },
+        "audit": {
+            "abandoned": "report",
+            "ignore": []
         }
     },
     "minimum-stability": "stable",
